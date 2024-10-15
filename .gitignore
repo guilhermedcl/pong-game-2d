@@ -1,0 +1,22 @@
+# Ignorar arquivos de compilação
+*.o
+*.exe
+
+# Ignorar diretórios de dependências
+*.lock
+*.zip
+*.tar.gz
+*.tar
+
+# Ignorar arquivos temporários
+*.tmp
+*.log
+*.cache
+
+# Ignorar diretórios gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de configuração do editor
+.vscode/
+.idea/
