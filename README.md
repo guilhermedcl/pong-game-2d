@@ -20,8 +20,8 @@ Certifique-se de que os seguintes itens estejam instalados e configurados no seu
    - No VS Code, instale a extensão "LOVE" e "Lua" para melhor integração.
 
 4. **Configuração do Build Task (VS Code)**:
-   - Para rodar o jogo usando `Ctrl+Shift+B`, configure uma task no VS Code:
-     - Crie um arquivo `tasks.json` na pasta `.vscode` do projeto com o seguinte conteúdo:
+   - Para rodar o jogo usando `Ctrl+Shift+B`, certifique-se de que tem configurada esta task no VS Code:
+     - Procure um arquivo `tasks.json` na pasta `.vscode` do projeto com o seguinte conteúdo:
      ```json
      {
        "version": "2.0.0",
@@ -40,6 +40,8 @@ Certifique-se de que os seguintes itens estejam instalados e configurados no seu
      }
      ```
 
+  - Obs:. Caso não haja essa pasta e/ou esse arquivo, crie-os como está declarado acima no caminho principal do código.
+
 ## Como Rodar a Aplicação
 
 1. Clone este repositório ou faça o download dos arquivos do projeto.
@@ -54,4 +56,17 @@ Certifique-se de que os seguintes itens estejam instalados e configurados no seu
 - **Jogador 2**:
   - `Seta para cima` - Mover para cima
   - `Seta para baixo` - Mover para baixo
-- `Esc` - Sair do jogo
+
+## Comandos:
+
+- **Partida**:
+  - `Enter` - Para iniciar uma partida
+  - `P`, `Enter`, `Space` - Para pausar e continuar uma partida (Quando tem partida em andamento).
+- **Recursos**:
+  - `L` - Para mudar entre tema claro e escuro
+  - `M` - Para mutar e desmutar a música de fundo
+- **Saída**:
+  - `Esc` - Para direcionar a uma tela de confirmação de saída
+  - `Enter` - Para sair do jogo, caso esteja na tela de confirmação de saída
+  - `Space` - Para voltar ao jogo, caso esteja na tela de confirmação de saída
+  - `Alt + F4` - Para sair do jogo direto
