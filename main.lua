@@ -77,9 +77,9 @@ function love.load()
     introVideo:play() -- Inicia o vídeo automaticamente
 
     -- Carrega os sons
-    backgroundSound = love.audio.newSource("assets/sounds/MemeMusic.mp3", "stream") -- Carrega o som de fundo
+    backgroundSound = love.audio.newSource("assets/sounds/NCSMusic.mp3", "stream") -- Carrega o som de fundo
     backgroundSound:setLooping(true) -- Define som de fundo para tocar continuamente
-    backgroundSound:setVolume(0.1) -- Define o volume mais baixo para o som de fundo
+    backgroundSound:setVolume(0.2) -- Define o volume mais baixo para o som de fundo
 
     -- Carrega os efeitos sonoros para as colisões e eventos
     paddleHitSound = love.audio.newSource("assets/sounds/Paddle.mp3", "static") -- Carrega o som de colisão com o paddle
