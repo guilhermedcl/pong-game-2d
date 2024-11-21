@@ -18,5 +18,4 @@
 Thumbs.db
 
 # Ignorar arquivos de configuração do editor
-.vscode/
 .idea/
