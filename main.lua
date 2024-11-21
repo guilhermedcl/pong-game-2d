@@ -34,7 +34,7 @@ resetTimer = 0 -- Temporizador para o reinício
 countdown = 3 -- Contagem regressiva de 3 segundos para reiniciar após um ponto
 
 -- Pontuação máxima para vencer o jogo
-MAX_SCORE = 7
+MAX_SCORE = 5
 
 -- Inicializa as vitórias de cada jogador
 player1Wins = 0
