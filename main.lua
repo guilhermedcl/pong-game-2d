@@ -34,7 +34,7 @@ resetTimer = 0 -- Temporizador para o reinício
 countdown = 3 -- Contagem regressiva de 3 segundos para reiniciar após um ponto
 
 -- Pontuação máxima para vencer o jogo
-MAX_SCORE = 7
+MAX_SCORE = 5
 
 -- Inicializa as vitórias de cada jogador
 player1Wins = 0
@@ -383,14 +383,14 @@ function love.draw()
         elseif gameState == 'start' then
             -- Tela de início
             love.graphics.setColor(1, 1, 1)
-            love.graphics.printf('O jogador que conseguir\n\n7 pontos primeiro será o vencedor', 0, 50, VIRTUAL_WIDTH, 'center')
+            love.graphics.printf('O jogador que conseguir\n\n5 pontos primeiro será o vencedor da rodada', 0, 50, VIRTUAL_WIDTH, 'center')
 
             if textVisible then
                 love.graphics.printf('Pressione Enter para começar a partida', 0, 180, VIRTUAL_WIDTH, 'center')
             end
 
-            love.graphics.printf(changeTheme and 'Light Theme\nPress (L)' or 'Night Theme\nPress (L)', 3.5, 3, 400, 'left')
-            love.graphics.printf('Para sair\nPress ESC', VIRTUAL_WIDTH - 100, 3, 97, 'right')
+            love.graphics.printf(changeTheme and 'Tema Diurno\nPressione (L)' or 'Tema Noturno\nPress (L)', 3.5, 3, 400, 'left')
+            love.graphics.printf('Para sair\nPressione ESC', VIRTUAL_WIDTH - 100, 3, 97, 'right')
 
             love.graphics.printf(muteText, VIRTUAL_WIDTH - 100, VIRTUAL_HEIGHT - 10, 99, 'right')
 
@@ -406,9 +406,9 @@ function love.draw()
             -- Tela de contagem regressiva
             love.graphics.printf('A partida começará em ' .. countdown, 0, 50, VIRTUAL_WIDTH, 'center')
             love.graphics.setColor(1, 1, 1)
-            love.graphics.printf('Player 1\n\n(W/S)', -130, 140, 400, 'center') -- Instrução para o jogador 1
+            love.graphics.printf('Jogador 1\n\n(W/S)', -130, 140, 400, 'center') -- Instrução para o jogador 1
             love.graphics.setColor(1, 1, 1)
-            love.graphics.printf('Player 2\n\n(Up/Down)', 165, 140, 400, 'center') -- Instrução para o jogador 2
+            love.graphics.printf('Jogador 2\n\n(Up/Down)', 165, 140, 400, 'center') -- Instrução para o jogador 2
             love.graphics.rectangle('fill', 10, player1Y, 5, PADDLE_HEIGHT)
             love.graphics.rectangle('fill', VIRTUAL_WIDTH - 15, player2Y, 5, PADDLE_HEIGHT)
 
@@ -421,7 +421,7 @@ function love.draw()
             end
 
             love.graphics.printf(changeTheme and 'Light Theme\nPress (L)' or 'Night Theme\nPress (L)', 3.5, 3, 400, 'left')
-            love.graphics.printf('Para sair\nPress ESC', VIRTUAL_WIDTH - 100, 3, 97, 'right')
+            love.graphics.printf('Para sair\nPressione ESC', VIRTUAL_WIDTH - 100, 3, 97, 'right')
 
             love.graphics.printf(muteText, VIRTUAL_WIDTH - 100, VIRTUAL_HEIGHT - 10, 99, 'right')
 
